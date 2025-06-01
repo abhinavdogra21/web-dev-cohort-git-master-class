@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sample Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background-color: #19164fd3;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li {
+      cursor: pointer;
+    }
+
+    nav button {
+      background-color: white;
+      padding: 5px 10px;
+      border-radius: 8px;
+      border: none;
+      color: black;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    nav button:hover {
+      background-color: rgb(63, 165, 233);
+      color: white;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 10%;
+      background-color: #19164fd3;
+      color: white;
+      gap: 20px;
+    }
+
+    .hero .left-div {
+      flex: 1 1 300px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin: 15px 0;
+      color: #e4d9d9;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .hero .image {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .hero .image img {
+      width: 90%;
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px rgb(99, 98, 98);
+      border: solid 2px #121212;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .hero .image img:hover {
+      transform: rotate(-1deg);
+    }
+
+    .client-heading {
+      text-align: center;
+      color: #000;
+      font-size: 30px;
+      margin: 40px 0 20px;
+    }
+
+    .client-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px 10%;
+    }
+
+    .client-images div {
+      width: 120px;
+      height: 120px;
+    }
+
+    .client-images img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 0 10px black;
+      cursor: pointer;
+    }
+
+    .three-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 10%;
+    }
+
+    .card {
+      border: 2px solid black;
+      border-radius: 10px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 0 10px black;
+      width: 280px;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    /* Responsive Background Colors (for demo) */
+    @media screen and (max-width: 480px) {
+      body {
+        background-color: yellow;
+      }
+    }
+
+    @media screen and (min-width: 481px) {
+      body {
+        background-color: rgba(209, 71, 71, 0.749);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><p>Our Logo</p></div>
+    <ul>
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Contact</li>
+    </ul>
+    <div>
+      <button>Sign In</button>
+      <button>Sign Up</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="left-div">
+      <h1>Title</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cum, at eum id accusantium soluta rem.</p>
+      <button>Sign up</button>
+    </div>
+    <div class="image">
+      <img src="sample.jpg" alt="Hero Image">
+    </div>
+  </section>
+
+  <h2 class="client-heading">Our Clients</h2>
+  <section class="client-images">
+    <div><img src="https://images.pexels.com/photos/30777391/pexels-photo-30777391/free-photo-of-stylish-portrait-of-man-in-ghana-with-bold-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div>
+    <div><img src="https://images.pexels.com/photos/32239849/pexels-photo-32239849/free-photo-of-elegant-woman-in-red-dress-with-braids.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div>
+    <div><img src="https://images.pexels.com/photos/30839092/pexels-photo-30839092/free-photo-of-elegant-woman-in-red-dress-in-ho-chi-minh-city.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div>
+    <div><img src="https://images.pexels.com/photos/29637263/pexels-photo-29637263/free-photo-of-stylish-couple-in-classic-vintage-attire.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div>
+    <div><img src="https://images.pexels.com/photos/29637263/pexels-photo-29637263/free-photo-of-stylish-couple-in-classic-vintage-attire.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div>
+  </section>
+
+  <section class="three-card">
+    <div class="card">
+      <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
+      <h3>Card Title</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laboriosam!</p>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/93827/pexels-photo-93827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+      <h3>Card Title</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laboriosam!</p>
+    </div>
+    <div class="card">
+      <img src="https://images.pexels.com/photos/1270076/pexels-photo-1270076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+      <h3>Card Title</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laboriosam!</p>
+    </div>
+  </section>
+</body>
+</html>
